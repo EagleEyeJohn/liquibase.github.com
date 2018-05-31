@@ -306,7 +306,7 @@ create table person (
 );
 
 --changeset nvoxland:2
-alter table person add column username varchar(8)
+alter table person add column username varchar(8);
 
 --changeset nvoxland:3
 create table state AS SELECT DISTINCT state AS id FROM person WHERE state IS NOT NULL;
